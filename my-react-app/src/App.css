@@ -17,8 +17,7 @@ html, body, #root {
   height: var(--header-h);
   display: flex;
   align-items: center;
-  padding: 20 20px;      
-  background: rgb(252, 252, 252);
+  padding: 20 20px; 
   z-index: 1000;
 }
 
@@ -33,8 +32,6 @@ html, body, #root {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: rgb(2, 2, 2);
-  color: #fefefe;
   z-index: 1000;
 }
 
@@ -46,7 +43,6 @@ html, body, #root {
   min-height: calc(100vh - var(--header-h) - var(--footer-h));
   overflow: auto;
 
-  background: rgb(162, 105, 18);
   padding-left: 30px;
   padding-right: 30px;
 }

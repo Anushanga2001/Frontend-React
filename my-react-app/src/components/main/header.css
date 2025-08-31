@@ -1,11 +1,12 @@
 .parent-header {
     display: contents;
-    color: rgb(15, 3, 2);
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,"Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 .left {
+    display: contents;
     position: fixed;
     left: 5%;
 }

@@ -31,7 +31,6 @@ html, body, #root {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
   z-index: 1000;
 }
 
@@ -43,6 +42,6 @@ html, body, #root {
   min-height: calc(100vh - var(--header-h) - var(--footer-h));
   overflow: auto;
 
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
 }

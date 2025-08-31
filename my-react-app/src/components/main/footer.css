@@ -1,0 +1,15 @@
+.card {
+    margin-bottom: 50px;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.849);
+    color: rgb(250, 250, 250);
+}
+
+.card-title {
+    color: rgb(255, 100, 91);
+}
+
+.card-footer {
+    padding-bottom: 50px;
+}

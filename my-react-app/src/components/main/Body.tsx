@@ -1,5 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./body.css"
+import trackImg from "../../assets/track.png";
+import priceImg from "../../assets/price.png";
+import aboutImg from "../../assets/about.png";
+import serviceImg from "../../assets/service.png";
 
 function Body() {
   return (
@@ -18,6 +22,9 @@ function Body() {
                 <p className="card-text">
                   Enter your tracking number and stay updated on your shipment status in real time.
                 </p>
+                <div className="icon">
+                  <img src={trackImg} alt="Track Shipment" />
+                </div>
               </div>
             </div>
           </div>
@@ -30,6 +37,9 @@ function Body() {
                 <p className="card-text">
                   From freight forwarding to express delivery, we offer tailored logistics solutions.
                 </p>
+                <div className="icon">
+                  <img src={serviceImg} alt="services" />
+                </div>
               </div>
             </div>
           </div>
@@ -41,6 +51,9 @@ function Body() {
                 <p className="card-text">
                   Get transparent and competitive pricing for all your shipping needs.
                 </p>
+                <div className="icon">
+                  <img src={priceImg} alt="pricing" />
+                </div>
               </div>
             </div>
           </div>
@@ -53,6 +66,9 @@ function Body() {
                 <p className="card-text">
                   Learn more about our history, values, and commitment to reliable global shipping.
                 </p>
+                <div className="icon">
+                  <img src={aboutImg} alt="about us" />
+                </div>
               </div>
             </div>
           </div>

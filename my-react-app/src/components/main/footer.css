@@ -1,6 +1,7 @@
 .card {
-    margin-bottom: 50px;
+    display: flex;
     width: 100%;
+    height: 140px;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.849);
     color: rgb(250, 250, 250);
@@ -11,5 +12,6 @@
 }
 
 .card-footer {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }

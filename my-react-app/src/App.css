@@ -1,57 +1,30 @@
-html, body, #root {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;           
-}
-
-:root {
-  --header-h: 60px;
-  --footer-h: 60px;
-}
-
 .head {
-  position: fixed;
+  position: sticky;
   top: 0; left: 0; right: 0;
-  height: var(--header-h);
   display: flex;
   align-items: center;
-  padding: 0 20px;            
   z-index: 1000;
-  background: #fff;            
-  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  background: #fff;
+  height: 50px;
+  padding-left: 10px;
 }
 
 .footer {
   position: fixed;
   left: 0; right: 0; bottom: 0;
-  height: var(--footer-h);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
   background: #fff;
-  box-shadow: 0 -2px 8px rgba(0,0,0,.06);
+  height: 140px;
 }
 
-/* Scroll only the middle section */
 .body {
-  /* reserve space so content doesn't go under header/footer */
-  padding-top: var(--header-h);
-  padding-bottom: var(--footer-h);
-
-  /* this area scrolls */
-  height: calc(100vh - var(--header-h) - var(--footer-h));
-  overflow-y: auto;
-
   padding-left: 5%;
   padding-right: 5%;
-  position: relative;
   z-index: 0;
-}
-
-/* Optional: better iOS safe-area handling */
-@supports(padding:max(0px)) {
-  .footer {
-    padding-bottom: max(0px, env(safe-area-inset-bottom));
-  }
+  overflow-y: auto;
+  position: relative;
+  height: calc(100vh - 50px - 140px);
 }
